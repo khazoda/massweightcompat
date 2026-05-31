@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "quark:stick_block", "required": false },
+    { "id": "quark:sugar_cane_block", "required": false },
+    { "id": "quark:cactus_block", "required": false },
+    { "id": "quark:chorus_fruit_block", "required": false },
+    { "id": "quark:blaze_lantern", "required": false }
+  ]
+}

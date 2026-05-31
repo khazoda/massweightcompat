@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#massweightcompat:properties/volume/half/plushables",
+    "#massweightcompat:properties/volume/half/mekanism"
+  ]
+}

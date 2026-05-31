@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "ars_nouveau:sourcestone", "required": false },
+    { "id": "ars_nouveau:source_gem_block", "required": false }
+
+  ]
+}

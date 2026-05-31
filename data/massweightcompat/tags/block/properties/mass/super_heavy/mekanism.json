@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "mekanism:digital_miner", "required": false },
+    { "id": "mekanism:block_bio_fuel", "required": false }
+  ]
+}

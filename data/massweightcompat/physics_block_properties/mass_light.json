@@ -1,0 +1,12 @@
+{
+  "selector": "#massweightcompat:properties/mass/light",
+  "priority": 1100,
+  "properties": {
+    "sable:mass": 0.5
+  },
+  "overrides": {
+    "type=double": {
+      "sable:mass": 1.0
+    }
+  }
+}

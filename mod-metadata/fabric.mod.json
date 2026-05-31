@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "id": "massweightcompat",
+  "version": "@VERSION@",
+  "name": "Create Aeronautics: Sable Mass Mod Compatibility",
+  "description": "Compatibility pack that adds simulation properties for blocks from other mods.",
+  "authors": [
+    "khazoda"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/datapack/massweightcompat"
+  },
+  "license": "GPL-3.0-only",
+  "icon": "pack.png",
+  "environment": "*",
+  "depends": {
+    "fabric-resource-loader-v0": "*",
+    "minecraft": "1.21.1",
+    "sable": "*"
+  }
+}

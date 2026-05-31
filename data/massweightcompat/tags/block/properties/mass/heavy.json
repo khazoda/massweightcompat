@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#massweightcompat:properties/mass/heavy/mekanism",
+    "#massweightcompat:properties/mass/heavy/ars_nouveau",
+    "#massweightcompat:properties/mass/heavy/farmersdelight",
+    "#massweightcompat:properties/mass/heavy/supplementaries",
+    "#massweightcompat:properties/mass/heavy/quark"
+  ]
+}

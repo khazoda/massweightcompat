@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "mekanism:seismic_vibrator", "required": false },
+    { "id": "mekanism:solar_neutron_activator", "required": false },
+    { "id": "mekanism:modification_station", "required": false },
+    { "id": "mekanism:pigment_mixer", "required": false },
+    { "id": "mekanism:steel_casing", "required": false },
+    { "id": "mekanismadditions:obsidian_tnt", "required": false },
+    { "id": "mekanismgenerators:advanced_solar_generator", "required": false },
+    { "id": "mekanismgenerators:wind_generator", "required": false }
+  ]
+}

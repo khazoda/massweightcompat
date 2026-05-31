@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "bronze:bronze_block", "required": false },
+    { "id": "bronze:raw_tin_block", "required": false },
+    { "id": "bronze:bronze_blend_block", "required": false }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "replace": false,
+  "values": [
+    "#massweightcompat:properties/mass/weightless/mekanism",
+    "#massweightcompat:properties/mass/weightless/ars_nouveau"
+  ]
+}

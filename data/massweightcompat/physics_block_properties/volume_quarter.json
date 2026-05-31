@@ -1,0 +1,12 @@
+{
+  "selector": "#massweightcompat:properties/volume/quarter",
+  "priority": 1100,
+  "properties": {
+    "sable:volume": 0.25
+  },
+  "overrides": {
+    "type=double": {
+      "sable:volume": 0.5
+    }
+  }
+}

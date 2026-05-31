@@ -1,0 +1,7 @@
+{
+  "selector": "#massweightcompat:properties/restitution/bouncy",
+  "priority": 1100,
+  "properties": {
+    "sable:restitution": 0.5
+  }
+}

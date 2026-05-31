@@ -1,0 +1,7 @@
+{
+  "selector": "#massweightcompat:properties/mass/weightless",
+  "priority": 1100,
+  "properties": {
+    "sable:mass": 0.0
+  }
+}

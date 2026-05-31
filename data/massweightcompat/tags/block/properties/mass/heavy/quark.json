@@ -1,0 +1,18 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "quark:apple_crate", "required": false },
+    { "id": "quark:golden_apple_crate", "required": false },
+    { "id": "quark:potato_crate", "required": false },
+    { "id": "quark:carrot_crate", "required": false },
+    { "id": "quark:golden_carrot_crate", "required": false },
+    { "id": "quark:beetroot_crate", "required": false },
+    { "id": "quark:cocoa_beans_sack", "required": false },
+    { "id": "quark:nether_wart_sack", "required": false },
+    { "id": "quark:gunpowder_sack", "required": false },
+    { "id": "quark:berry_sack", "required": false },
+    { "id": "quark:glowberry_sack", "required": false },
+    { "id": "quark:bonded_leather", "required": false },
+    { "id": "quark:bonded_rabbit_hide", "required": false }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "selector": "#massweightcompat:properties/mass/heavy",
+  "priority": 1100,
+  "properties": {
+    "sable:mass": 2.0
+  }
+}

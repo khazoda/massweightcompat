@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "#massweightcompat:properties/mass/normal/minecraft",
+    "#massweightcompat:properties/mass/normal/farmersdelight",
+    "#massweightcompat:properties/mass/normal/supplementaries",
+    "#massweightcompat:properties/mass/normal/ars_nouveau",
+    "#massweightcompat:properties/mass/normal/quark"
+
+  ]
+}

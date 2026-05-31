@@ -1,0 +1,6 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "#plushables:all_plushables", "required": false }
+  ]
+}

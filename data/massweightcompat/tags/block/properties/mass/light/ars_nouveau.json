@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "ars_nouveau:sourcestone_grate", "required": false },
+    { "id": "ars_nouveau:smooth_sourcestone_grate", "required": false },
+    { "id": "ars_nouveau:gold_grate", "required": false }
+  ]
+}

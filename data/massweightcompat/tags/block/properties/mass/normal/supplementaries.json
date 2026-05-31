@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "supplementaries:flax_block", "required": false },
+    { "id": "supplementaries:sugar_cube", "required": false },
+    { "id": "supplementaries:soap_block", "required": false }
+  ]
+}

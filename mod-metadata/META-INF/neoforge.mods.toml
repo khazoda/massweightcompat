@@ -1,0 +1,18 @@
+modLoader = "lowcodefml"
+loaderVersion = "[1,)"
+license = "GPL-3.0-only"
+showAsResourcePack = false
+
+mods = [
+  { modId = "massweightcompat", version = "@VERSION@", displayName = "Create Aeronautics: Sable Mass Mod Compatibility", description = "Compatibility pack that adds simulation properties for blocks from other mods.", logoFile = "pack.png", authors = "khazoda", displayURL = "https://modrinth.com/datapack/massweightcompat" },
+]
+
+[[dependencies.massweightcompat]]
+modId = "minecraft"
+versionRange = "[1.21.1]"
+side = "SERVER"
+
+[[dependencies.massweightcompat]]
+modId = "sable"
+ordering = "AFTER"
+side = "SERVER"

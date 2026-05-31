@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "#massweightcompat:properties/mass/super_light/plushables",
+    "#massweightcompat:properties/mass/super_light/mekanism",
+    "#massweightcompat:properties/mass/super_light/ars_nouveau",
+    "#massweightcompat:properties/mass/super_light/quark"
+  ]
+}

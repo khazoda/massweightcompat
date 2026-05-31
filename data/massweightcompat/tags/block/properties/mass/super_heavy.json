@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "#massweightcompat:properties/mass/super_heavy/bronze",
+    "#massweightcompat:properties/mass/super_heavy/mekanism",
+    "#massweightcompat:properties/mass/super_heavy/ars_nouveau"
+  ]
+}

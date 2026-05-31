@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "mekanism:chargepad", "required": false },
+    { "id": "mekanism:industrial_alarm", "required": false },
+    { "id": "mekanism:laser", "required": false },
+    { "id": "mekanism:supercharged_coil", "required": false },
+    { "id": "mekanism:qio_importer", "required": false },
+    { "id": "mekanism:qio_exporter", "required": false },
+    { "id": "mekanism:qio_redstone_adapter", "required": false },
+    { "id": "mekanismgenerators:solar_generator", "required": false }
+  ]
+}
