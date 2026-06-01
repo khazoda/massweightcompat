@@ -6,14 +6,14 @@ on:
 
 jobs:
   modrinth:
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       - name: Build
         shell: pwsh
-        run: .\build.ps1 -Version "${{ github.event.release.tag_name }}"
+        run: ./build.ps1 -Version "${{ github.event.release.tag_name }}"
 
       - name: Publish datapack to Modrinth
         uses: cloudnode-pro/modrinth-publish@v2

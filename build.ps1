@@ -47,11 +47,11 @@ New-Item -ItemType Directory -Path $modStage | Out-Null
 
 Copy-Datapack -Destination $datapackStage
 Copy-Datapack -Destination $modStage
-Copy-Item -Path (Join-Path $root "mod-metadata\*") -Destination $modStage -Recurse
+Copy-Item -Path (Join-Path $root "mod-metadata/*") -Destination $modStage -Recurse
 
 $metadataFiles = @(
     (Join-Path $modStage "fabric.mod.json"),
-    (Join-Path $modStage "META-INF\neoforge.mods.toml")
+    (Join-Path $modStage "META-INF/neoforge.mods.toml")
 )
 
 foreach ($file in $metadataFiles) {
