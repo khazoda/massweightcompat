@@ -44,10 +44,10 @@ function Publish-Version {
         -Method Post `
         -Uri "https://api.modrinth.com/v3/version" `
         -Headers $headers `
-        -Form @{
+        -Form ([ordered]@{
             data = $data
             file = Get-Item $File
-        } | Out-Null
+        }) | Out-Null
 }
 
 $dependencies = @(
