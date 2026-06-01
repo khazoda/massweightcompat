@@ -1,6 +1,5 @@
 {
   "replace": false,
   "values": [
-    { "id": "ars_nouveau:magebloom_block", "required": false }
   ]
 }

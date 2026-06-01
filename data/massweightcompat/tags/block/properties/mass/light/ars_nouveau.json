@@ -3,6 +3,19 @@
   "values": [
     { "id": "ars_nouveau:sourcestone_grate", "required": false },
     { "id": "ars_nouveau:smooth_sourcestone_grate", "required": false },
-    { "id": "ars_nouveau:gold_grate", "required": false }
+    { "id": "ars_nouveau:gold_grate", "required": false },
+    { "id": "ars_nouveau:spell_sensor", "required": false },
+    { "id": "ars_nouveau:magebloom_block", "required": false },
+    { "id": "ars_nouveau:falseweave", "required": false },
+    { "id": "ars_nouveau:mirrorweave", "required": false },
+    { "id": "ars_nouveau:ghostweave", "required": false },
+    { "id": "ars_nouveau:sky_block", "required": false },
+    { "id": "ars_nouveau:imbuement_chamber", "required": false },
+    { "id": "ars_nouveau:scryers_oculus", "required": false },
+    { "id": "ars_nouveau:mob_jar", "required": false },
+    { "id": "ars_nouveau:item_detector", "required": false },
+    { "id": "ars_nouveau:redstone_relay", "required": false }
+
+
   ]
 }

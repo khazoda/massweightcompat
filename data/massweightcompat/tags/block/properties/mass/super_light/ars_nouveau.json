@@ -1,6 +1,17 @@
 {
   "replace": false,
   "values": [
-    { "id": "ars_nouveau:archwood_grate", "required": false }
+    { "id": "ars_nouveau:archwood_grate", "required": false },
+    { "id": "ars_nouveau:rotating_spell_turret", "required": false },
+    { "id": "ars_nouveau:basic_spell_turret", "required": false },
+    { "id": "ars_nouveau:timer_spell_turret", "required": false },
+    { "id": "ars_nouveau:spell_turret", "required": false },
+    { "id": "ars_nouveau:whirlisprig_flower", "required": false },
+    { "id": "ars_nouveau:arcane_platform", "required": false },
+    { "id": "ars_nouveau:brazier_relay", "required": false },
+
+    
+    { "id": "#ars_nouveau:summon_bed", "required": false }
+
   ]
 }

@@ -1,5 +1,6 @@
 param(
-    [string]$Version = "1.0.2+1.21.1"
+    [Parameter(Mandatory)]
+    [string]$Version
 )
 
 $ErrorActionPreference = "Stop"
@@ -34,8 +35,10 @@ function New-Zip {
     )
 
     Remove-Item -LiteralPath $Destination -Force -ErrorAction SilentlyContinue
-    Compress-Archive -Path (Join-Path $Source "*") -DestinationPath $Destination
+    [System.IO.Compression.ZipFile]::CreateFromDirectory($Source, $Destination)
 }
+
+Add-Type -AssemblyName System.IO.Compression.FileSystem
 
 Reset-Directory -Path $build
 New-Item -ItemType Directory -Path $export -Force | Out-Null
@@ -58,13 +61,10 @@ foreach ($file in $metadataFiles) {
 }
 
 $datapackZip = Join-Path $export "$baseName.zip"
-$temporaryModZip = Join-Path $build "mod.zip"
 $modJar = Join-Path $export "$baseName.jar"
 
 New-Zip -Source $datapackStage -Destination $datapackZip
-New-Zip -Source $modStage -Destination $temporaryModZip
-Remove-Item -LiteralPath $modJar -Force -ErrorAction SilentlyContinue
-Move-Item -LiteralPath $temporaryModZip -Destination $modJar
+New-Zip -Source $modStage -Destination $modJar
 
 Remove-Item -LiteralPath $build -Recurse -Force
 

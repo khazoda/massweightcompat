@@ -1,6 +1,15 @@
 {
   "replace": false,
   "values": [
-    { "id": "ars_nouveau:archwood_pressure_plate", "required": false }
+    { "id": "ars_nouveau:archwood_pressure_plate", "required": false },
+    { "id": "ars_nouveau:enchanting_apparatus", "required": false },
+    { "id": "ars_nouveau:relay", "required": false },
+    { "id": "ars_nouveau:relay_splitter", "required": false },
+    { "id": "ars_nouveau:relay_deposit", "required": false },
+    { "id": "ars_nouveau:relay_warp", "required": false },
+    { "id": "ars_nouveau:relay_collector", "required": false },
+    { "id": "ars_nouveau:scryers_crystal", "required": false }
+
+
   ]
 }

@@ -1,8 +1,7 @@
 {
   "replace": false,
   "values": [
-    { "id": "ars_nouveau:void_prism", "required": false },
-    { "id": "ars_nouveau:sourceberry_sack", "required": false }
+    { "id": "ars_nouveau:void_prism", "required": false }
 
     
   ]
