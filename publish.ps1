@@ -15,7 +15,8 @@ $headers = @{
 function Publish-Version {
     param(
         [string]$File,
-        [string[]]$Loaders
+        [string[]]$Loaders,
+        [string]$Environment
     )
 
     $data = @{
@@ -27,11 +28,17 @@ function Publish-Version {
         featured = $false
         status = "listed"
         loaders = $Loaders
-        fields = $fields
+        game_versions = @("1.21.1")
         dependencies = $dependencies
         file_parts = @("file")
         primary_file = "file"
-    } | ConvertTo-Json -Depth 5 -Compress
+    }
+
+    if ($Environment) {
+        $data.environment = $Environment
+    }
+
+    $data = $data | ConvertTo-Json -Depth 5 -Compress
 
     Invoke-RestMethod `
         -Method Post `
@@ -48,15 +55,11 @@ $dependencies = @(
     @{ project_id = "oWaK0Q19"; dependency_type = "optional" }
 )
 
-$fields = @{
-    game_versions = @("1.21.1")
-    environment = "server_only"
-}
-
 Publish-Version `
     -File "export/massweightcompat-$Version.zip" `
     -Loaders @("datapack")
 
 Publish-Version `
     -File "export/massweightcompat-$Version.jar" `
-    -Loaders @("fabric", "neoforge")
+    -Loaders @("fabric", "neoforge") `
+    -Environment "server_only"
