@@ -1,0 +1,40 @@
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  modrinth:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build
+        shell: pwsh
+        run: .\build.ps1 -Version "${{ github.event.release.tag_name }}"
+
+      - name: Publish datapack to Modrinth
+        uses: cloudnode-pro/modrinth-publish@v2
+        with:
+          token: ${{ secrets.MODRINTH_TOKEN }}
+          project: bJLW7HUi
+          version: ${{ github.event.release.tag_name }}
+          changelog: ${{ github.event.release.body }}
+          loaders: datapack
+          game-versions: 1.21.1
+          files: export/massweightcompat-${{ github.event.release.tag_name }}.zip
+
+      - name: Publish mod to Modrinth
+        uses: cloudnode-pro/modrinth-publish@v2
+        with:
+          token: ${{ secrets.MODRINTH_TOKEN }}
+          project: bJLW7HUi
+          version: ${{ github.event.release.tag_name }}
+          changelog: ${{ github.event.release.body }}
+          loaders: |-
+            fabric
+            neoforge
+          game-versions: 1.21.1
+          files: export/massweightcompat-${{ github.event.release.tag_name }}.jar
