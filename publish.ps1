@@ -24,6 +24,7 @@ function Publish-Version {
         version_title = $Version
         version_body = $Changelog
         release_channel = "release"
+        featured = $false
         status = "listed"
         loaders = $Loaders
         fields = $fields
