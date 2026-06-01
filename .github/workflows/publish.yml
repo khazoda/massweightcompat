@@ -15,26 +15,10 @@ jobs:
         shell: pwsh
         run: ./build.ps1 -Version "${{ github.event.release.tag_name }}"
 
-      - name: Publish datapack to Modrinth
-        uses: cloudnode-pro/modrinth-publish@v2
-        with:
-          token: ${{ secrets.MODRINTH_TOKEN }}
-          project: bJLW7HUi
-          version: ${{ github.event.release.tag_name }}
-          changelog: ${{ github.event.release.body }}
-          loaders: datapack
-          game-versions: 1.21.1
-          files: export/massweightcompat-${{ github.event.release.tag_name }}.zip
-
-      - name: Publish mod to Modrinth
-        uses: cloudnode-pro/modrinth-publish@v2
-        with:
-          token: ${{ secrets.MODRINTH_TOKEN }}
-          project: bJLW7HUi
-          version: ${{ github.event.release.tag_name }}
-          changelog: ${{ github.event.release.body }}
-          loaders: |-
-            fabric
-            neoforge
-          game-versions: 1.21.1
-          files: export/massweightcompat-${{ github.event.release.tag_name }}.jar
+      - name: Publish to Modrinth
+        shell: pwsh
+        env:
+          MODRINTH_TOKEN: ${{ secrets.MODRINTH_TOKEN }}
+          RELEASE_VERSION: ${{ github.event.release.tag_name }}
+          RELEASE_CHANGELOG: ${{ github.event.release.body }}
+        run: ./publish.ps1 -Version $env:RELEASE_VERSION -Changelog $env:RELEASE_CHANGELOG
