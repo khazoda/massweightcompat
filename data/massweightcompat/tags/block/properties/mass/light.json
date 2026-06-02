@@ -3,7 +3,7 @@
   "values": [
     "#massweightcompat:properties/mass/light/mekanism",
     "#massweightcompat:properties/mass/light/ars_nouveau",
-    "#massweightcompat:properties/mass/light/quark"
-
+    "#massweightcompat:properties/mass/light/quark",
+    "#massweightcompat:properties/mass/light/createframed"
   ]
 }

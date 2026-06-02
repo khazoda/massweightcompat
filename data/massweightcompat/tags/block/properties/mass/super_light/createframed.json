@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "#createframed:dyed_cardboard_window_panes", "required": false },
+    { "id": "createframed:cardboard_window_pane", "required": false }
+
+  ]
+}

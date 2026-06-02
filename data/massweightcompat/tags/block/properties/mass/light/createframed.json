@@ -1,0 +1,15 @@
+{
+  "replace": false,
+  "values": [
+    { "id": "#createframed:dyed_cardboard_blocks", "required": false },
+    { "id": "#createframed:dyed_cardboard_windows", "required": false },
+    { "id": "#createframed:dyed_bound_cardboard_blocks", "required": false },
+    { "id": "createframed:cardboard_window", "required": false },
+
+
+    { "id": "createframed:karpboard_block", "required": false },
+    { "id": "createframed:shiny_karpboard_block", "required": false },
+    { "id": "createframed:pulp_block", "required": false }
+
+  ]
+}
